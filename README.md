@@ -18,7 +18,18 @@ In this project I gather data from Twitter using Tweepy, make a Twitter Bot, and
 - The average number of tweets from an individual user.
 - The hour with the greatest number of tweets.
 
-----------------------------------------------------------
+## Packages and Imports
+
+```Python
+import tweepy
+import os
+import collections
+import sqlalchemy
+import pymysql
+from time import gmtime, strftime
+from pprint import pprint
+```
+## Example Functions
 
 An example function from capstone.py , the most common symbols:
 
