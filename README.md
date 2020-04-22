@@ -18,7 +18,7 @@ In this project I gather data from Twitter using Tweepy, make a Twitter Bot, and
 - The average number of tweets from an individual user.
 - The hour with the greatest number of tweets.
 
-## Packages and Imports
+## Modules Used
 
 ```Python
 import tweepy
