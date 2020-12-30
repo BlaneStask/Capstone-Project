@@ -4,7 +4,6 @@ import os
 
 logger = logging.getLogger()
 
-
 def create_api():
     # fetch the secrets from our virtual environment variables
     consumer_key = os.environ["CONSUMER_KEY"]
@@ -24,9 +23,7 @@ def create_api():
     logger.info("API created")
     return api
 
-
 logging.basicConfig(level=logging.INFO)
-
 
 class FavRetweetListener(tweepy.StreamListener):
     def __init__(self, api):
@@ -46,13 +43,11 @@ class FavRetweetListener(tweepy.StreamListener):
     def on_error(self, status):
         logger.error(status)
 
-
 def main(keywords):
     api = create_api()
     tweets_listener = FavRetweetListener(api)
     stream = tweepy.Stream(api.auth, tweets_listener)
     stream.filter(track=keywords, languages=["en"])
-
 
 if __name__ == "__main__":
     main(["Tesla"])
