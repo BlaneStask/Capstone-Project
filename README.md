@@ -1,8 +1,6 @@
 # Capstone Project
 
-This is the Capstone Project for the CodingNomads Python Course. 
-
-In this project I gather data from Twitter using Tweepy, make a Twitter Bot, and use functions to find:
+This is the Capstone Project for the CodingNomads Python Course. In this project I gathered data from Twitter using Tweepy, made a Twitter Bot, and use functions to find:
 
 - The average number of followers.
 - The average length of tweets (counting words).
