@@ -215,7 +215,7 @@ def most_common_hour(tweets):
     return top_hour
 
 
-engine = sqlalchemy.create_engine('mysql+pymysql://root:mydogisachub9336@localhost/Twitter_Data')
+engine = sqlalchemy.create_engine('mysql+pymysql://root:************@localhost/Twitter_Data')
 connection = engine.connect()
 metadata = sqlalchemy.MetaData()
 
